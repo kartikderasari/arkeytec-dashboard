@@ -1,4 +1,4 @@
-/* module.exports = {
+ module.exports = {
   baseUrl: './',
 
   pwa: {
@@ -16,10 +16,5 @@
     }
   }
 }
- */
+ 
 
-module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/arkeytec-dashboard/'
-    : '/'
-}
