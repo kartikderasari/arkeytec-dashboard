@@ -129,7 +129,7 @@ import VueCountly from 'vue-countly'
 ////////////////////////////////////////////////////////////
 Vue.use( VueCountly, Countly, {
   app_key: '04ac5c1e31e993f2624e964475dd949e9a3443f5',
-  url: 'https://telemetry.speckle.works',
+  url: '',
 } );
 
 // Automatic 'plugin' component registration:

@@ -103,7 +103,7 @@
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>Viewer</v-list-tile-title>
-          <v-list-tile-sub-title class='xxx-font-weight-light caption'>3d speckle stream viewer</v-list-tile-sub-title>
+          <v-list-tile-sub-title class='xxx-font-weight-light caption'>Arkeytec Dashboard</v-list-tile-sub-title>
         </v-list-tile-content>
       </v-list-tile>
       <v-list-tile to='/processors'>
@@ -149,24 +149,24 @@
       <v-divider class='ma-3'></v-divider>
     </v-list>
     <v-list xxxv-if='$store.state.isAuth' two-line subheader>
-      <v-list-tile href='https://speckle.systems/docs/web/management' target='_blank'>
+      <!-- <v-list-tile href='https://speckle.systems/docs/web/management' target='_blank'>
         <v-list-tile-action>
           <v-icon>help</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>App Help</v-list-tile-title>
           <v-list-tile-sub-title class='caption'>Help for this web app.</v-list-tile-sub-title>
-        </v-list-tile-content>
+        </v-list-tile-content> -->
       </v-list-tile>
-      <v-list-tile href='https://speckle.systems/docs/essentials/start' target='_blank'>
+      <!-- <v-list-tile href='https://speckle.systems/docs/essentials/start' target='_blank'>
         <v-list-tile-action>
           <v-icon>help_outline</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>Speckle Help</v-list-tile-title>
           <v-list-tile-sub-title class='caption'>How to get started with Speckle.</v-list-tile-sub-title>
-        </v-list-tile-content>
-      </v-list-tile>
+        </v-list-tile-content> 
+      </v-list-tile> -->
     </v-list>
     <v-divider xxxsclass='mb-4' v-if='$store.state.isAuth'></v-divider>
     <v-list dense subheader class='ma-0 pa-0'>
@@ -184,8 +184,8 @@
       <v-card-text>
         <div class='text-uppercase text-xs-center-xxx caption ml-0 pa-5 ml-2 mt-3 mb-3'>
           Brought to you by:<br>
-          <a href='https://speckle.works' target="_blank" style="xxxcolor:white; text-decoration: none;"><b>Speckle</b>,
-            <span class=' caption'>the open source data platform for AEC.</span></a>
+          <a href='https://arkeytec.com' target="_blank" style="xxxcolor:white; text-decoration: none;"><b>Arkeytec</b>,
+            </a>
           <!-- <v-divider class='my-4'></v-divider> -->
         </div>
       </v-card-text>

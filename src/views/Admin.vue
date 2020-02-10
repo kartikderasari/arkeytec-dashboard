@@ -2,7 +2,7 @@
   <v-container grid-list-xl>
     <v-layout row wrap>
       <v-flex xs12 py-5 class='headline font-weight-light'>
-        Manage Users, Projects, and Streams for this Speckle Server.
+        Manage Users, Projects, and Streams for this Server.
       </v-flex>
       <v-flex xs12>
         <v-tabs v-model="active" grow class='pa-0 ma-0' slider-color='primary'>

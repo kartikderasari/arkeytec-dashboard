@@ -9,13 +9,15 @@
     "dev-all": "vue-cli-service serve & netlify-lambda serve ./src/lambda -t 120"
   },
   "dependencies": {
+    "@speckle/speckle-admin": "^0.2.11",
     "lodash.set": "^4.3.2",
     "md5": "^2.2.1",
     "msal": "^1.1.1",
     "register-service-worker": "^1.5.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
     "@tweenjs/tween.js": "^17.3.0",

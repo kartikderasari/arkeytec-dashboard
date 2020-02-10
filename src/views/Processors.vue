@@ -124,7 +124,7 @@ export default {
       } )
     },
     createProcessor( ) {
-      this.$store.dispatch( 'createProcessor', { name: 'A brand new speckle processor' } )
+      this.$store.dispatch( 'createProcessor', { name: 'A brand new processor' } )
         .then( res => {
           this.$router.push( `/processors/${res._id}` )
         } )

@@ -23,7 +23,7 @@
       <!-- Empty state handler -->
       <v-flex xs12 v-if='streams.length === 0'>
         <p class='title font-weight-light'>
-          👋 Hello {{$store.state.user.name}}! It looks like you haven't created any streams yet. Don't forget to check out the <a href='https://speckle.systems/docs/essentials/start' target='_blank'>guide</a>!
+          👋 Hello {{$store.state.user.name}}! It looks like you haven't created any streams yet.
         </p>
       </v-flex>
       <v-flex xs12>
@@ -184,7 +184,7 @@ export default {
       this.isSearching = false
     },
     createStream( ) {
-      this.$store.dispatch( 'createStream', { name: 'A New Speckle Stream', onlineEditable: true } )
+      this.$store.dispatch( 'createStream', { name: 'A New Stream', onlineEditable: true } )
         .then( res => {
           this.$router.push( `/streams/${res.streamId}` )
         } )
@@ -193,7 +193,7 @@ export default {
         } )
     },
     createProjectFromSelection( ) {
-      this.$store.dispatch( 'createProject', { name: 'Speckle Project', streams: this.selectedStreams.map( s => s.streamId ) } )
+      this.$store.dispatch( 'createProject', { name: 'Project', streams: this.selectedStreams.map( s => s.streamId ) } )
         .then( res => {
           this.clearSelection( )
           this.$router.push( `/projects/${res._id}` )

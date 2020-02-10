@@ -1,8 +1,8 @@
- module.exports = {
-  baseUrl: './',
+module.exports = {
+  publicPath: './',
 
   pwa: {
-    name: 'Speckle',
+    name: 'Arkeytec',
     themeColor: '#0962FF'
   },
 
@@ -16,5 +16,3 @@
     }
   }
 }
- 
-

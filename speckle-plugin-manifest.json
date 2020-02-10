@@ -1,11 +1,11 @@
 {
-  "name": "Speckle Admin",
-  "version":"1.0.3",
-  "desc": "YEAH! Speckle has a frontend yo!",
+  "name": "Arkeytec Dashboard",
+  "version":"1",
+  "desc": "",
   "serveFrom": "/",
   "serveSource": "/dist",
-  "author": "Speckle Project Contributors",
-  "contact":"hello@speckle.works",
-  "homepage":"https://speckle.works",
-  "git":"https://github.com/speckleworks/SpeckleAdmin"
+  "author": "",
+  "contact":"",
+  "homepage":"https://arkeytec.com",
+  "git":""
 }

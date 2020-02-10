@@ -5,7 +5,7 @@
     </v-navigation-drawer>
     <v-toolbar fixed app clipped-left clipped-right xxxstyle='z-index: 100000'>
       <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title class='text-uppercase font-weight-light'>{{$route.name}}</v-toolbar-title>
+      <v-toolbar-title class='text-uppercase font-weight-light'> Arkeytec Dashboard<!-- {{$route.name}} --></v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn flat fab small color='' @click.native='fullscreen'>
         <v-icon>{{isFullScreen ? "fullscreen_exit" :"fullscreen"}}</v-icon>

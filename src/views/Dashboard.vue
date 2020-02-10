@@ -7,16 +7,10 @@
       </v-flex>
       <v-flex xs12 py-5 class='' v-if='streams.length === 0 && projects.length === 0'>
         <div class='headline font-weight-light mb-4'>
-          👋 Hello {{$store.state.user.name}}! It looks like it's your first time here. Don't forget to check out the <a href='https://speckle.systems/docs/essentials/start' target='_blank'>guide</a>!
+          👋 Hello {{$store.state.user.name}}! It looks like it's your first time here.
         </div>
         <v-divider></v-divider>
-        <div class='mt-4 subheading'>
-          You can also get in touch with the rest of the speckle community via:
-          <ul>
-            <li><a href='https://discourse.speckle.works' target="_blank">Discourse</a></li>
-            <li><a href='https://slacker.speckle.works' target="_blank">Slack</a></li>
-            <li><a href='https://twitter.com/speckle_works' target="_blank">Twitter</a></li>
-          </ul>
+        
         </div>
       </v-flex>
       <v-flex xs12 v-if='streams.length !== 0 || projects.length !== 0'>
@@ -92,18 +86,11 @@
           <v-icon left>
             fiber_new
           </v-icon>
-          <span class='title font-weight-light'>
-            Speckle News
-          </span>
+          
           <v-spacer></v-spacer>
-          <!-- <v-toolbar-items>
-            <v-btn flat href='https://twitter.com/speckle_works' target='_blank'>Follow Speckle!</v-btn>
-          </v-toolbar-items> -->
+          
         </v-toolbar>
-        <v-card style='max-height: 560px; overflow-y: auto;'>
-          <Timeline :id="'speckle_works'" :sourceType="'profile'" :options="{ theme: $store.state.dark ? 'dark' : '', tweetLimit: 10 }" />
-        </v-card>
-        <v-btn block large xxxcolor='black' href='https://twitter.com/speckle_works' target='_blank'>Follow Speckle For More!</v-btn>
+        
       </v-flex>
     </v-layout>
   </v-container>
