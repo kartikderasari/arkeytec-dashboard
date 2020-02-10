@@ -92,7 +92,7 @@ export default {
       }
     },
     checkExistingServers( ) {
-      let usedServers = localStorage.getItem( 'allServers' ) ? localStorage.getItem( 'allServers' ).split( ',' ) : null
+      let usedServers = localStorage.getItem( 'allSpeckleServers' ) ? localStorage.getItem( 'allSpeckleServers' ).split( ',' ) : null
       let promises = usedServers.map( s => {
         Axios.get( s )
           .then( res => {
