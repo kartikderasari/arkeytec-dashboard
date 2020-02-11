@@ -23,7 +23,7 @@
       <!-- Empty state handler -->
       <v-flex xs12 v-if='streams.length === 0'>
         <p class='title font-weight-light'>
-          👋 Hello {{$store.state.user.name}}! It looks like you haven't created any streams yet.
+          👋 Hello {{$store.state.user.name}}!
         </p>
       </v-flex>
       <v-flex xs12>

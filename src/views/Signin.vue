@@ -33,7 +33,7 @@
               <v-list two-line>
                 <v-list-tile>
                   <v-list-tile-content>
-                    <v-text-field style='width: 90%' xxx-prepend-inner-icon='developer_board' hint='server url' type="url" v-model='server' name='server' label='server url' placeholder='https://speckle.yourdomain.com'></v-text-field>
+                    <v-text-field style='width: 90%' xxx-prepend-inner-icon='developer_board' hint='server url' type="url" v-model='server' name='server' label='server url' placeholder='https://yourdomain.com'></v-text-field>
                   </v-list-tile-content>
                   <v-list-tile-action>
                     <v-btn color="black" fab small dark type="submit" @click='login()'>
@@ -116,9 +116,9 @@ export default {
     this.checkExistingServers( )
     this.checkRedirect( )
 
-    if ( !window.location.href.includes( 'speckle.systems' ) ) {
+   /*  if ( !window.location.href.includes( 'speckle.systems' ) ) {
       this.server = new URL( window.location.href ).origin
-    }
+    } */
 
     if ( this.$store.state.isAuth === true ) {
       this.appendInfoToUrl( 'server', { apiUrl: this.$store.state.server } )

@@ -21,7 +21,7 @@ import viewer from './viewer.js'
 export default new Vuex.Store( {
   state: {
     appVersion: '1.0.3',
-    // The canonical and correct server url, i.e. ``
+    // The canonical and correct server url, i.e. `https://speckle.server.com/api`
     server: null,
     // The server description
     serverManifest: null,
@@ -643,7 +643,7 @@ export default new Vuex.Store( {
         } )
     },
     deleteStream( context, payload ) {
-      
+      // TODO: https://github.com/speckleworks/SpeckleAdmin/issues/19
       Axios.delete( `streams/${payload.streamId}` )
         .then( res => {
           context.commit( 'DELETE_STREAM', { streamId: payload.streamId } )
@@ -719,7 +719,7 @@ export default new Vuex.Store( {
     },
     createProject( context, project ) {
       return new Promise( ( resolve, reject ) => {
-        Axios.post( `projects`, project ? project : { name: 'A new project' } )
+        Axios.post( `projects`, project ? project : { name: 'A new speckle project' } )
           .then( res => {
             context.commit( 'ADD_PROJECTS', [ res.data.resource ] )
             //namespacing the admin module caused other issues, so we'll call this here as well
@@ -941,13 +941,13 @@ export default new Vuex.Store( {
     createProcessor( context, processor ) {
       var id = uuid( )
 
-      var proc = processor ? processor : { name: 'A new processor' }
+      var proc = processor ? processor : { name: 'A new speckle processor' }
 
       // Always assign new ID
       proc._id = id
 
       if ( !proc.hasOwnProperty( 'description' ) )
-        proc.description = "This is a simple processor."
+        proc.description = "This is a simple speckle processor."
 
       if ( !proc.hasOwnProperty( 'tags' ) )
         proc.tags = [ ]

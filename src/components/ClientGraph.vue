@@ -3,12 +3,12 @@
     <v-card-title class='title font-weight-light'>
       <div align="center">
       <v-icon small left>import_export</v-icon>&nbsp;
-      
-      <!-- <v-btn class="ml-6" round href="https://speckle.systems/docs/web/speckleviz/" target="_blank">
+      <b>SpeckleViz&trade;</b>&nbsp;
+      <v-btn class="ml-6" round href="https://speckle.systems/docs/web/speckleviz/" target="_blank">
         <v-icon left>help_outline</v-icon>
         need help? read the docs
         <v-icon right>arrow_right_alt</v-icon>
-      </v-btn> -->
+      </v-btn>
       </div>
   
     </v-card-title>

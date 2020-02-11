@@ -1,6 +1,7 @@
 /**
  * @author HypnosNova / https://www.threejs.org.cn/gallery
  * This is a class to check whether objects are in a selection area in 3D space
+ * Note: modified for speckle use
  */
 
 
