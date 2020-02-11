@@ -1109,12 +1109,12 @@ export default new Vuex.Store( {
         localStorage.setItem( 'currentServer', `${payload.server}/api` )
         localStorage.setItem( 'token', payload.token )
 
-        let usedServers = localStorage.getItem( 'allServers' ) ? new Set( localStorage.getItem( 'allServers' ).split( ',' ) ) : new Set( [ `${payload.server}/api` ] )
+        let usedServers = localStorage.getItem( 'allSpeckleServers' ) ? new Set( localStorage.getItem( 'allSpeckleServers' ).split( ',' ) ) : new Set( [ `${payload.server}/api` ] )
         // if( !usedServers ) usedServers = new Set([`${payload.server}/api`])
         usedServers.add( `${payload.server}/api` )
         console.log( `${payload.server}/api` )
         console.log( usedServers )
-        localStorage.setItem( 'allServers', [ ...usedServers ] )
+        localStorage.setItem( 'allSpeckleServers', [ ...usedServers ] )
 
         return resolve( )
       } catch ( err ) {
