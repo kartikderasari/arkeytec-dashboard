@@ -21,7 +21,7 @@
       <!-- Empty state handler -->
       <v-flex xs12 v-if='projects.length === 0'>
         <p class='title font-weight-light'>
-          👋 Hello {{$store.state.user.name}}! 
+          👋 Hello {{$store.state.user.name}}! It looks like you haven't created any projects yet!
         </p>
       </v-flex>
       <v-flex xs12>

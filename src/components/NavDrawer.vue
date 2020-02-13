@@ -79,7 +79,7 @@
           <v-list-tile-sub-title class='xxx-font-weight-light caption'>Create and manage your streams.</v-list-tile-sub-title>
         </v-list-tile-content>
       </v-list-tile>
-      <!-- <v-list-tile to='/projects'>
+      <v-list-tile to='/projects'>
         <v-list-tile-action>
           <v-icon>business</v-icon>
         </v-list-tile-action>
@@ -87,8 +87,8 @@
           <v-list-tile-title>Projects</v-list-tile-title>
           <v-list-tile-sub-title class='xxx-font-weight-light caption'>Group your data and share it with others.</v-list-tile-sub-title>
         </v-list-tile-content>
-      </v-list-tile> -->
-      <!-- <v-list-tile to='/trash'>
+      </v-list-tile>
+      <v-list-tile to='/trash'>
         <v-list-tile-action>
           <v-icon>delete_outline</v-icon>
         </v-list-tile-action>
@@ -96,17 +96,17 @@
           <v-list-tile-title>Archive</v-list-tile-title>
           <v-list-tile-sub-title class='xxx-font-weight-light caption'>The good old recycle bin.</v-list-tile-sub-title>
         </v-list-tile-content>
-      </v-list-tile> -->
+      </v-list-tile>
       <v-list-tile to='/view'>
         <v-list-tile-action>
           <v-icon>360</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>Viewer</v-list-tile-title>
-          <v-list-tile-sub-title class='xxx-font-weight-light caption'>3d stream viewer</v-list-tile-sub-title>
+          <v-list-tile-sub-title class='xxx-font-weight-light caption'>Arkeytec Dashboard</v-list-tile-sub-title>
         </v-list-tile-content>
       </v-list-tile>
-      <!-- <v-list-tile to='/processors'>
+      <v-list-tile to='/processors'>
         <v-list-tile-action>
           <v-icon>code</v-icon>
         </v-list-tile-action>
@@ -114,7 +114,7 @@
           <v-list-tile-title>Processor</v-list-tile-title>
           <v-list-tile-sub-title class='xxx-font-weight-light caption'>Stream processing</v-list-tile-sub-title>
         </v-list-tile-content>
-      </v-list-tile> -->
+      </v-list-tile>
       <!-- Dynamically add plugin routes -->
       <v-list-tile v-for='plugin in $store.state.adminPlugins' :to='plugin.route' :key='plugin.route'>
         <v-list-tile-action>
@@ -127,6 +127,7 @@
       </v-list-tile>
       <!-- end plugin routes -->
       <!-- <v-divider class='ma-3'></v-divider> -->
+      <v-divider class='ma-3'></v-divider>
       <v-list-tile v-if='$store.state.user.role==="admin"' to='/admin'>
         <v-list-tile-action>
           <v-icon>settings</v-icon>
@@ -136,7 +137,7 @@
           <v-list-tile-sub-title class='xxx-font-weight-light caption'>Server administration</v-list-tile-sub-title>
         </v-list-tile-content>
       </v-list-tile>
-      <!-- <v-list-tile to='/pluginsadmin'>
+      <v-list-tile to='/pluginsadmin'>
         <v-list-tile-action>
           <v-icon>extensions</v-icon>
         </v-list-tile-action>
@@ -144,28 +145,29 @@
           <v-list-tile-title>Plugins</v-list-tile-title>
           <v-list-tile-sub-title class='xxx-font-weight-light caption'>Plugins registered on this server</v-list-tile-sub-title>
         </v-list-tile-content>
-      </v-list-tile> -->
+      </v-list-tile>
+      <v-divider class='ma-3'></v-divider>
     </v-list>
-    <!-- <v-list xxxv-if='$store.state.isAuth' two-line subheader>
-      <v-list-tile href='https://speckle.systems/docs/web/management' target='_blank'>
+    <v-list xxxv-if='$store.state.isAuth' two-line subheader>
+      <!-- <v-list-tile href='https://speckle.systems/docs/web/management' target='_blank'>
         <v-list-tile-action>
           <v-icon>help</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>App Help</v-list-tile-title>
           <v-list-tile-sub-title class='caption'>Help for this web app.</v-list-tile-sub-title>
-        </v-list-tile-content>
+        </v-list-tile-content> -->
       </v-list-tile>
-      <v-list-tile href='https://speckle.systems/docs/essentials/start' target='_blank'>
+      <!-- <v-list-tile href='https://speckle.systems/docs/essentials/start' target='_blank'>
         <v-list-tile-action>
           <v-icon>help_outline</v-icon>
         </v-list-tile-action>
         <v-list-tile-content>
           <v-list-tile-title>Speckle Help</v-list-tile-title>
           <v-list-tile-sub-title class='caption'>How to get started with Speckle.</v-list-tile-sub-title>
-        </v-list-tile-content>
-      </v-list-tile>
-    </v-list> -->
+        </v-list-tile-content> 
+      </v-list-tile> -->
+    </v-list>
     <v-divider xxxsclass='mb-4' v-if='$store.state.isAuth'></v-divider>
     <v-list dense subheader class='ma-0 pa-0'>
       <v-list-tile @click='toggleDark()'>
@@ -182,7 +184,8 @@
       <v-card-text>
         <div class='text-uppercase text-xs-center-xxx caption ml-0 pa-5 ml-2 mt-3 mb-3'>
           Brought to you by:<br>
-          <a href='https://arkeytec.com' target="_blank" style="xxxcolor:white; text-decoration: none;"><b>Arkeytec</b></a>
+          <a href='https://arkeytec.com' target="_blank" style="xxxcolor:white; text-decoration: none;"><b>Arkeytec</b>,
+            </a>
           <!-- <v-divider class='my-4'></v-divider> -->
         </div>
       </v-card-text>

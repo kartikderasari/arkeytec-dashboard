@@ -1,8 +1,8 @@
 module.exports = {
-  baseUrl: './',
+  publicPath: './',
 
   pwa: {
-    name: 'Arkeytec Dashboard',
+    name: 'Arkeytec',
     themeColor: '#0962FF'
   },
 

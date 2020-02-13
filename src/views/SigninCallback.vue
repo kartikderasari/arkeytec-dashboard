@@ -11,7 +11,8 @@
           </v-card-text>
           <v-card-text v-else class='pt-4'>
             <p class='headline font-weight-light'><v-icon class='pb-1'>error</v-icon>&nbsp;Oups. Something bad happened :(</p>
-           
+            <p class='caption' v-if='sslProblem'>
+              </p>
             <v-btn block to='/signin'>back to signin</v-btn>
           </v-card-text>
           <v-card-actions>

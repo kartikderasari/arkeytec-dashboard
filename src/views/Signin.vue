@@ -92,7 +92,7 @@ export default {
       }
     },
     checkExistingServers( ) {
-      let usedServers = localStorage.getItem( 'allSpeckleServers' ) ? localStorage.getItem( 'allSpeckleServers' ).split( ',' ) : null
+      let usedServers = localStorage.getItem( 'allServers' ) ? localStorage.getItem( 'allServers' ).split( ',' ) : null
       let promises = usedServers.map( s => {
         Axios.get( s )
           .then( res => {
@@ -116,7 +116,7 @@ export default {
     this.checkExistingServers( )
     this.checkRedirect( )
 
-   /*  if ( !window.location.href.includes( 'speckle.systems' ) ) {
+    /* if ( !window.location.href.includes( 'speckle.systems' ) ) {
       this.server = new URL( window.location.href ).origin
     } */
 

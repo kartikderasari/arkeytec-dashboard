@@ -10,6 +10,8 @@
           👋 Hello {{$store.state.user.name}}! It looks like it's your first time here.
         </div>
         <v-divider></v-divider>
+        
+        </div>
       </v-flex>
       <v-flex xs12 v-if='streams.length !== 0 || projects.length !== 0'>
         <search-everything />
@@ -78,6 +80,17 @@
             <v-btn to='/projects/' class=''>See all your {{this.$store.state.projects.length}} projects</v-btn>
           </v-card-actions>
         </v-card>
+      </v-flex>
+      <v-flex xs12 md6 lg4>
+        <v-toolbar dense class=' '>
+          <v-icon left>
+            fiber_new
+          </v-icon>
+          
+          <v-spacer></v-spacer>
+          
+        </v-toolbar>
+        
       </v-flex>
     </v-layout>
   </v-container>

@@ -1,6 +1,6 @@
 {
   "name": "Arkeytec Dashboard",
-  "version":"1.0.3",
+  "version":"1",
   "desc": "",
   "serveFrom": "/",
   "serveSource": "/dist",
