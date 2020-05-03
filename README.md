@@ -26,7 +26,7 @@ To build for production: `npm run build`
 
 - Fork the repository
 - Navigate to your repository
-- `git clone https://github.com/{yourusername}/TinDog.git`
+- `git clone https://github.com/{yourusername}/arkeytec-dashboard.git`
 - Add your contributions
 - `git add .`
 - `git commit -m "comment"`
